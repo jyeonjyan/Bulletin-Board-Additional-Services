@@ -15,7 +15,7 @@ public class BoardController {
     public void post(@RequestBody BoardDto boardDto){
         boardService.post(boardDto);
     }
-
+    // param이 해당 게시물에 접근했을때.
     @GetMapping("/view/{postIdx}")
     public void view(@PathVariable Long postIdx){
         boardService.view(postIdx);

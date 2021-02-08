@@ -22,7 +22,7 @@ public class BoardService {
 
         return boardRepository.save(board);
     }
-
+    // 해당 idx를 찾고 hit 증가.
     @Transactional
     public void view(Long postIdx) {
         Board board = boardRepository.findByPostIdx(postIdx).orElseThrow();
