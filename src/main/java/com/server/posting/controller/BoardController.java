@@ -1,7 +1,6 @@
 package com.server.posting.controller;
 
 import com.server.posting.dto.BoardDto;
-import com.server.posting.dto.HitDto;
 import com.server.posting.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +17,7 @@ public class BoardController {
     }
 
     @GetMapping("/view/{postIdx}")
-    public void view(@RequestBody BoardDto boardDto){
-        boardService.view(boardDto);
+    public void view(@PathVariable Long postIdx){
+        boardService.view(postIdx);
     }
 }

@@ -24,5 +24,5 @@ public class Board {
     private String content;
 
     @Column
-    private Long hit;
+    private int hit = 0;
 }

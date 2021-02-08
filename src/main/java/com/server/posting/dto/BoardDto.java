@@ -14,4 +14,6 @@ public class BoardDto {
 
     @NotNull
     private String content;
+
+    private Long hit;
 }
