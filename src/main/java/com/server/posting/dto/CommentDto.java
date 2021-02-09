@@ -1,8 +1,7 @@
 package com.server.posting.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.server.posting.domain.Board;
-import com.server.posting.domain.Commnet;
+import com.server.posting.domain.Comment;
 import com.sun.istack.NotNull;
 import lombok.*;
 
@@ -11,15 +10,15 @@ import lombok.*;
 @Builder
 @Getter
 @Setter
-public class CommnetDto{
+public class CommentDto {
     @JsonIgnore
     private Long postIdx;
-
+    private Long commentIdx;
     @NotNull
     private String content;
 
-    public Commnet toEntity() {
-        return Commnet.builder()
+    public Comment toEntity() {
+        return Comment.builder()
                 .content(this.content)
                 .postIdx(this.postIdx)
                 .build();
