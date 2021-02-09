@@ -14,6 +14,6 @@ public class BoardDto {
 
     @NotNull
     private String content;
-
+    // 조회수
     private Long hit;
 }

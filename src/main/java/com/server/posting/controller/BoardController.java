@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class BoardController {
     @Autowired
     private BoardService boardService;
-
+    // post 경로.
     @PostMapping("/post")
     public void post(@RequestBody BoardDto boardDto){
         boardService.post(boardDto);
