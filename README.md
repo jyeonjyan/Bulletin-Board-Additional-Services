@@ -9,21 +9,3 @@
 > H2 Database  
 > Validation  
 > Spring Data JPA
-
-## ✅ API Testing 
-### POST
-```bash
-localhost:8080/board/post
-```
-### View -> Hit
-```bash
-localhost:8080/board/view{postIdx}
-```
-### CommentPost
-```bash
-http://localhost:8080/comment/write?postIdx={postIdx}
-```
-### CommentUpdate
-```bash
-http://localhost:8080/comment/update?commentIdx={commentIdx}
-```
